@@ -3,7 +3,7 @@ import { Fragment, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Ima from "../Icos/ok.webp";
 import Ima2 from "../Icos/ok.png";
-import Modal from "./Modal";
+import Modal from "./ModalInfo";
 import { ActionModal , CloseModal, nombreUsuario , ActionModalInfo } from "../Redux/Actions";
 import { useHistory} from 'react-router'
 
@@ -12,7 +12,7 @@ export default function Landing() {
   const history = useHistory();
 
   const [buscar, setBuscar] = useState("");
-  const modal = useSelector((state) => state.modal);
+  const modal = useSelector((state) => state.modaldata);
   const nombreUser = useSelector((state) => state.usuario);
   const dispatch = useDispatch();
   const Usuarios = [
@@ -39,35 +39,53 @@ export default function Landing() {
 
     event.preventDefault();
     console.log("ELEMENTO A BUSCAR" , buscar)
+
+
+    if (!buscar) {
+        
+      dispatch(
+        ActionModalInfo({
+          mensaje: "Error favor ingrese su documento",
+          image:
+            "https://cdn-icons-png.flaticon.com/512/3362/3362051.png",
+          visible: true,
+          data: "data",
+        })
+      );
+
+      setTimeout(() => {
+        dispatch(CloseModal(false));
+
+        
+      }, 3000);
+    } 
+
     Usuarios.forEach((object) => {
       if (object.documento === buscar) {
         console.log("handleBuscar", "documento valido");
-        dispatch(CloseModal(false));
         dispatch(nombreUsuario(object.nombre));
-        console.log("nomberUser", nombreUser);
-
-        console.log("modal", modal);
         return history.push("/players");
        
-      }
-      if (object.documento !== buscar) {
+       }else {
         
         dispatch(
           ActionModalInfo({
-            mensaje: "Error Cedula no encontrada",
+            mensaje: "Error no se encontró documento",
             image:
               "https://cdn-icons-png.flaticon.com/512/3362/3362051.png",
             visible: true,
             data: "data",
           })
         );
-
+  
         setTimeout(() => {
           dispatch(CloseModal(false));
-
+  
           
         }, 3000);
       } 
+  
+     
      
     
     }
@@ -82,7 +100,7 @@ export default function Landing() {
   return (
     <Fragment>
       
-      {modal === true ? <Modal /> : ""}
+      {modal.visible === true ? <Modal /> : ""}
       <div className="container" id="container">
         <div id="left" className="left">
           <img src={Ima} className="Ima"></img>

@@ -311,6 +311,9 @@ color: #ffffff;
   text-decoration: none;
 }
 
+.card-image3 {
+  width: 40%;
+}
 .modal h1 {
   font-size: 16px;
 }
@@ -366,7 +369,7 @@ color: #ffffff;
 
 }
 
-.menu .active {
+.card-image2.menu .active {
   color: #67696b;
 }
 

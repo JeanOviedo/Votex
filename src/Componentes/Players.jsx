@@ -14,9 +14,42 @@ export default function Players() {
   const modaldata = useSelector((state) => state.modaldata);
 
   useEffect(() => {
+
+    if (nombreusuario) {
+        
+      dispatch(
+        ActionModalInfo({
+          mensaje: "Bienvenido al sistema de votación",
+          image:
+            "https://www.isblasalle.edu.co/wp-content/uploads/2020/01/mision.png",
+          visible: true,
+          data: "data",
+        })
+      );
+
+      setTimeout(() => {
+        dispatch( ActionModalInfo({
+          mensaje: "Bienvenido al sistema de votación",
+          image:
+            "https://www.isblasalle.edu.co/wp-content/uploads/2020/01/mision.png",
+          visible: false,
+          data: "data",
+        }));
+
+        
+      }, 3000);
+    } 
+
+
+
+
     if (nombreusuario === undefined) {
       return history.push("/");
     }
+
+
+
+    
   }, [history, nombreusuario]);
 
   function handleClick(evento, data, datoname) {

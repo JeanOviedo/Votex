@@ -35,10 +35,10 @@ export default function ModalInfo()
         <div key={Math.random(5)}  className="modal" >
         <div>
         
-           <h2>{ modaldata.mensaje}</h2>  
+           <h1>{ modaldata.mensaje}</h1>  
          
           
-          <img src={modaldata.image} alt={modaldata.image} className="card-image" />
+          <img src={modaldata.image} alt={modaldata.image} className="card-image3" />
           
         
         </div>
