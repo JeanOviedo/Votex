@@ -2,8 +2,13 @@
 
 export const USUARIO = "USUARIO";
 export const MODAL = "MODAL";
+export const MODALINFO = "MODALINFO";
 
+export function ActionModalInfo(valor) {
+    console.log("MODALINFO    ss-----------", valor);
+    return {type: "MODALINFO", payload:valor};
 
+}
 
 export function ActionModal(valor, valor2) {
     console.log("MODAL-----------", valor, valor2);

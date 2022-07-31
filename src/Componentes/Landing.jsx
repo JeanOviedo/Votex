@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import Ima from "../Icos/ok.webp";
 import Ima2 from "../Icos/ok.png";
 import Modal from "./Modal";
-import { ActionModal , CloseModal, nombreUsuario } from "../Redux/Actions";
+import { ActionModal , CloseModal, nombreUsuario , ActionModalInfo } from "../Redux/Actions";
 import { useHistory} from 'react-router'
 
 
@@ -22,6 +22,7 @@ export default function Landing() {
       registroDia: new Date("2012-02-03"),
       otro: 7,
       curso: "11A",
+      voto: false,
     },
     {
       nombre: "Perejil Lopez",
@@ -29,6 +30,7 @@ export default function Landing() {
       registroDia: new Date("2012-02-03"),
       otro: 7,
       curso: "11B",
+      voto: false,
     },
   ];
 
@@ -50,7 +52,16 @@ export default function Landing() {
       }
       if (object.documento !== buscar) {
         
-        dispatch(ActionModal("ALGO", true, "NO EXISTE"));
+        dispatch(
+          ActionModalInfo({
+            mensaje: "Error Cedula no encontrada",
+            image:
+              "https://cdn-icons-png.flaticon.com/512/3362/3362051.png",
+            visible: true,
+            data: "data",
+          })
+        );
+
         setTimeout(() => {
           dispatch(CloseModal(false));
 

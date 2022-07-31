@@ -1,8 +1,9 @@
-import {  MODAL , USUARIO} from "./Actions.jsx";
+import {  MODAL , USUARIO , MODALINFO} from "./Actions.jsx";
 const initialState = {
   usuario: "",
   modal: false,
   modaldata: [],
+
  
 };
 
@@ -22,8 +23,17 @@ export default function rooReducer(state = initialState, action) {
     case MODAL:
       return {
         ...state,
-        modaldata: action.payload,
+      
         modal: action.modal,
+      
+      };
+
+      
+    case MODALINFO:
+      return {
+        ...state,
+        modaldata: action.payload,
+        
       
       };
 
