@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Votex/static/css/main.b8eedbd1.css",
+    "main.js": "/Votex/static/js/main.c9397a8c.js",
+    "static/js/787.fea5d741.chunk.js": "/Votex/static/js/787.fea5d741.chunk.js",
+    "static/media/img-opacity50.png": "/Votex/static/media/img-opacity50.f3c4d104e553ac49082c.png",
+    "static/media/cartagena.jpg": "/Votex/static/media/cartagena.f50d09205c9711416e24.jpg",
+    "static/media/yerifer.jpg": "/Votex/static/media/yerifer.33fc944b07533288654f.jpg",
+    "static/media/jean.jpg": "/Votex/static/media/jean.c0090459484fa8dc01a1.jpg",
+    "static/media/ok.webp": "/Votex/static/media/ok.3106dd6ffeed141f0dad.webp",
+    "static/media/ok.png": "/Votex/static/media/ok.df418942d89108c592ac.png",
+    "static/media/logo.png": "/Votex/static/media/logo.864f611b36d4e2ac78f0.png",
+    "index.html": "/Votex/index.html",
+    "main.b8eedbd1.css.map": "/Votex/static/css/main.b8eedbd1.css.map",
+    "main.c9397a8c.js.map": "/Votex/static/js/main.c9397a8c.js.map",
+    "787.fea5d741.chunk.js.map": "/Votex/static/js/787.fea5d741.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8eedbd1.css",
+    "static/js/main.c9397a8c.js"
+  ]
+}
