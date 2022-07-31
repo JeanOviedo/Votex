@@ -433,7 +433,7 @@ color: #ffffff;
     overflow-x: hidden;
 }
 .imagevotos{
-height: 40%;
+width: 40%;
 }
   .navbar {
     
@@ -629,7 +629,7 @@ height: 40%;
 .card {
   height: 100%;
   width: 90%;
-  background-color: #e5e2e2;
+  background-color: #d01919;
   border-radius: 2px;
   padding-top: 0em;
   padding-left: 2.5%;
