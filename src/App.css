@@ -432,7 +432,9 @@ color: #ffffff;
     max-width: 100%;
     overflow-x: hidden;
 }
-
+.imagevotos{
+height: 40%;
+}
   .navbar {
     
     padding: 3px;
