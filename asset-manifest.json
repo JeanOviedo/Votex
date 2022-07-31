@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Votex/static/css/main.c84bbbd0.css",
+    "main.css": "/Votex/static/css/main.3823f851.css",
     "main.js": "/Votex/static/js/main.6ca87bb9.js",
     "static/js/787.fea5d741.chunk.js": "/Votex/static/js/787.fea5d741.chunk.js",
     "static/media/img-opacity50.png": "/Votex/static/media/img-opacity50.f3c4d104e553ac49082c.png",
@@ -11,12 +11,12 @@
     "static/media/ok.png": "/Votex/static/media/ok.df418942d89108c592ac.png",
     "static/media/logo.png": "/Votex/static/media/logo.864f611b36d4e2ac78f0.png",
     "index.html": "/Votex/index.html",
-    "main.c84bbbd0.css.map": "/Votex/static/css/main.c84bbbd0.css.map",
+    "main.3823f851.css.map": "/Votex/static/css/main.3823f851.css.map",
     "main.6ca87bb9.js.map": "/Votex/static/js/main.6ca87bb9.js.map",
     "787.fea5d741.chunk.js.map": "/Votex/static/js/787.fea5d741.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c84bbbd0.css",
+    "static/css/main.3823f851.css",
     "static/js/main.6ca87bb9.js"
   ]
 }
