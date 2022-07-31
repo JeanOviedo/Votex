@@ -19,7 +19,7 @@ export default function Players() {
         
       dispatch(
         ActionModalInfo({
-          mensaje: "Bienvenido al sistema de votación",
+             mensaje: "Bienvenido...",
           image:
             "https://www.isblasalle.edu.co/wp-content/uploads/2020/01/mision.png",
           visible: true,

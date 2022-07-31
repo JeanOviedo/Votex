@@ -8,7 +8,7 @@ export default function ModalInfo()
 
 {
     let modaldata = useSelector((state) => state.modaldata);
- 
+   
     const dispatch = useDispatch();
     const history = useHistory();
   function handleClick(evento, data, datoname) {
@@ -42,9 +42,9 @@ export default function ModalInfo()
           
         
         </div>
-
+{modaldata.image !== "https://www.isblasalle.edu.co/wp-content/uploads/2020/01/mision.png" ? <button  onClick={(event) => handleClick(event)} className="buscarboton2">Cerrar</button> : ""}
         <br />
-        <button  onClick={(event) => handleClick(event)} className="buscarboton2">Cerrar</button>
+        
       </div>
 
 
